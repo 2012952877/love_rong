@@ -134,8 +134,8 @@ window.addEventListener("resize", onResize);
 requestAnimationFrame(render);
 
 window.onload=function starttime(){  
-        time(h1,'2024,2,3,10,40');     // 在一起的时间  
-        setInterval(function(){ time(h1,'2024,2,3,10,40') }, 1000); // 添加计时器  
+        time(h1,'2024,2,2,10,40');     // 在一起的时间  
+        setInterval(function(){ time(h1,'2024,2,2,12,30') }, 1000); // 添加计时器  
 }  
 
 function time(obj, futimg){ 
@@ -147,14 +147,8 @@ function time(obj, futimg){
             difference = -difference;  //取正数
         }
         var daysDifference = Math.floor(difference/1000/60/60/24);
-        difference -= daysDifference*1000*60*60*24
-        var hoursDifference = Math.floor(difference/1000/60/60);
-        difference -= hoursDifference*1000*60*60
-        var minutesDifference = Math.floor(difference/1000/60);
-        difference -= minutesDifference*1000*60
-        var secondsDifference = Math.floor(difference/1000);
 
-        obj.innerHTML="亲爱的融融！<br>咱俩在一起的时间已经：<br>"+daysDifference+"天"+hoursDifference+"小时"+minutesDifference+"分"+secondsDifference+"秒"+"了<br><span>能够遇见你是我最大的幸运！<br>有了你生活变得丰富多彩，<br>有了你世界变得如此迷人，<br>中间的计时器将永远见证我们爱过的岁月。<br>你是我的世界，我的世界是你,<br>对我来说，不是在最美好的时光遇见你，<br>而是遇见你后都是最美好的时光！</span>"
+        obj.innerHTML="亲爱的融融宝贝!<br>咱俩在一起的时间已经:<br>第"+daysDifference+"天啦!<br><span>我曾翻过群山，见过大海，见过漫天繁星，<br>但唯独遇见你，才是我长久以来，<br>所有奔赴的意义。<br>这个计时器，是我们爱情时光的见证。<br>你是我的世界，我的世界是你。</span>"
 
         return true;  
     }  
@@ -164,3 +158,4 @@ function time(obj, futimg){
 
 </body>
 </html>
+
